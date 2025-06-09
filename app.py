@@ -7,8 +7,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sentence_transformers import SentenceTransformer, util
 
-st.set_page_config(page_title="🎬 Movie Recommender", layout="wide")
-st.title("🎓 Final Year Project - Bollywood Movie Recommendation Dashboard")
+st.set_page_config(page_title="🎬 Bollywood-Radar", layout="wide")
+st.title("Bollywood Movie Recommendation Dashboard")
 st.markdown("An intelligent system that recommends movies using **semantic overview matching**, **genre**, **director**, and **cast similarity**.")
 
 # Load and preprocess data
@@ -64,7 +64,7 @@ st.sidebar.button("🔄 Reset to Default", on_click=reset_weights)
 input_weights = {}
 for key in ['genre', 'director', 'cast', 'overview']:
     input_weights[key] = st.sidebar.slider(
-        f"{key.capitalize()} Weight (Before Normalization)",
+        f"{key.capitalize()} Weightage",
         0.0, 1.0, float(st.session_state.weights[key]), step=0.05
     )
 

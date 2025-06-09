@@ -1,0 +1,6 @@
+streamlit==1.45.1
+pandas==2.3.0
+numpy==2.3.0
+sentence-transformers==4.1.0
+torch
+matplotlib==3.10.3
